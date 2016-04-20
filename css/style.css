@@ -1,0 +1,2859 @@
+/*
+	Theme Name: Warner - Multi-purpose Bootstrap Template
+	Theme URI: http://themeforest.net/user/responsiveexperts
+	Description: This css file is for light template layout alignments
+	Version: 1.0
+	Author: ctrlthreads
+	Author URI: http://themeforest.net/user/responsiveexperts
+	Tags:
+	
+	---------------------------
+	MAIN TEMPLATE STYLES
+	---------------------------
+	
+	TABLE OF CONTENTS
+	---------------------------
+	 01. Global Content Styles
+	 02. Preloader Content Styles
+     03. Header Content Styles
+	 04. Banner Content Styles
+	 05. Schedule Content Styles
+	 06. advantages Content Styles
+	 07. community Content Styles
+	 08. Count Content Styles
+	 09. Our Service Content Styles
+	 10. Looking for job Content Styles
+	 11. Portfolio Content Styles
+	 12. Testinomial Content Style
+	 13. Latest Tweets Content Styles
+	 14. Latest Blog Content Styles
+	 15. Contact Blog Content Styles
+	 16. Quick Contact-Map Content Styles
+	 17. Speak with Us NOWt Styles
+	 18. Footer Black Styles
+	 19. Footer ARROW TOP Styles 
+	 20. Footer Main Styles 
+	 21. Media Query
+*/
+
+
+/* ==================================================== */
+/* 01. Global Content Styles                            */
+/* ==================================================== */
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../font-awesome/fonts/fontawesome-webfont.eot@v=4.3.0');
+	src: url('../font-awesome/fonts/fontawesome-webfont.eot@') format('embedded-opentype'), url('../font-awesome/fonts/fontawesome-webfont.woff2@v=4.3.0.html') format('woff2'), url('../font-awesome/fonts/fontawesome-webfont.woff@v=4.3.0') format('woff'), url('../font-awesome/fonts/fontawesome-webfont.ttf@v=4.3.0') format('truetype'), url('../font-awesome/fonts/fontawesome-webfont.svg@v=4.3.0') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body {
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 300;
+	height: 100%;
+	width: 100%;
+	line-height: 24px;
+	font-size: 16px;
+	color: #666666;
+	background-color: #ffffff;
+}
+/* Link Styling */
+
+a, a:hover, a:active, a:visited, a:link {
+	outline: none;
+	color: #0078ff;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	text-decoration: none;
+}
+/* Headings */
+
+h1 {
+	font-family: 'Oxygen', sans-serif;
+	font-size:48px;
+	font-weight: 700;
+	margin:0;
+	text-transform: capitalize;
+	color: #000;
+}
+h1 span {
+	font-weight:300;
+}
+h2 {
+	font-family: 'Varela Round', sans-serif;
+	font-size:36px;
+	line-height: 43px;
+	margin: 0 0 30px;
+	text-transform: uppercase;
+	color: #10c2b1;
+}
+h3 {
+	margin: 0 0 0 0;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	font-weight:600;
+}
+h3 span {
+	font-weight:300;
+}
+
+h4 {
+	color:#333333;
+	font-family: 'Oxygen', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding: 0;
+}
+h4 span {
+	font-weight:300;
+}
+
+h5 {
+	margin: 0 0 0 0;
+	font-family: 'Varela Round', sans-serif;
+	font-size:18px;
+	color: #0078ff;
+}
+h6 {
+	margin: 0 0 10px 0;
+	padding: 0 0 0 0;
+	font-family: 'Varela Round', sans-serif;
+	font-size:16px;
+	color: #0078ff;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+hr {
+	padding: 0 0 0 0;
+	margin: 0 0 10px 0;
+	display: inline-table;
+	width: 85px;
+	height: 6px;
+	background: rgba(0,0,0,0.3);
+	border: 0;
+}
+hr.special {
+	padding: 0 0 0 0;
+	margin: 20px 0 0 0;
+	border: 0;
+	height: 34px;
+	background: url(http://www.ctrlthreads.co.in/themes/warner/html/img/hr-spec.png) no-repeat center center;
+}
+.medium-txt {
+	padding: 10px 10%;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+	color: #333333;
+}
+.color {
+	color: #1e9fb4;
+}
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+}
+p {
+	font-family:"Varela Round",sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #666666;
+}
+.special-text {
+	font-family:"Varela Round",sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #666666;
+}
+/* animation styles */
+
+.animated {
+	visibility: hidden;
+}
+.visible {
+	visibility: visible;
+}
+/* Button Styles */
+
+.button-large, .button-large:focus, .button-large:hover {
+	padding: 17px 25px;
+	margin: 25px 0 20px 0;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 700;
+	background: #f20707;
+	display: inline-table;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+/* Lists */
+li {
+	list-style: none;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.icon-list {
+	padding: 0 0 0 15px;
+	margin: 0 0 0 0;
+	list-style: none;
+}
+.icon-list li {
+	padding: 10px 0;
+	margin: 0 0 0 0;
+}
+.icon-list i {
+	padding-right: 10px;
+	color: #1e9fb4;
+	font-size: 18px;
+}
+/* Inner Page Main Content Area */
+
+.inner-main-cont-area {
+	padding: 0 0 80px 0;
+	margin: 0 0 0 0;
+	background: url(http://www.ctrlthreads.co.in/themes/warner/html/img/sky-bottom.jpg) no-repeat bottom center;
+	background-size: cover;
+}
+/* ==================================================== */
+/* 02. Preloader Content Styles                         */
+/* ==================================================== */
+
+#mask {
+	background-color: #2b3840;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100000;
+}
+#loader {
+	background-image: url(../img/loader.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 200px;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	position: absolute;
+	top: 50%;
+	width: 200px;
+}
+/* ==================================================== */
+/* 03. Header Content Styles                            */
+/* ==================================================== */
+
+.header-area {
+	left: 0;
+    margin: 0;
+    padding:45px 0;
+    position: fixed;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 9;
+}
+.header-area.navbar-fixed-top {
+	position: fixed;
+	padding: 20px 0;
+	background: rgba(0,0,0,0.9);
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+/*.header-area.navbar-fixed-top .call-today a.hide-div {
+	opacity:0;
+	height:0;
+}
+.header-area.navbar-fixed-top .call-today {
+	display:none;
+	height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    transition: all 0.5s ease 0s;
+}
+
+*/
+.header-area.navbar-fixed-top .call-today {
+	display:none;
+}
+.header-area.navbar-fixed-top .header-right-sec {
+    margin:5px 0 0;
+	padding:3px 0 0 0;
+	
+}
+.header-area.navbar-fixed-top .header-right-sec .nav-area li a {
+	font-size:14px;
+}
+.header-area.navbar-fixed-top .logo-sec {
+    padding: 0;
+}
+.header-area.navbar-fixed-top .logo-sec img {
+	transition: all 0.5s ease 0s;
+}
+
+.header-top {
+	margin: 0 0 0 0;
+	padding: 25px 0;
+	background-color: rgba(255, 255, 253, 0.4);
+	color: rgba(255, 255, 253, 0.4);
+}
+.logo-sec {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	float: left;
+}
+.logo-sec img {
+	transition: all 0.5s ease 0s;
+	height: 50px;
+}
+.header-right-sec {
+	margin: 0 0 0 0;
+	padding:5px 0 0 0;
+	float: right;
+	transition: all 0.5s ease 0s;
+}
+.call-today {
+	text-align: right;
+	margin-bottom: 30px;
+}
+.call-today i {
+	display: inline-block;
+	font-size: 30px;
+	padding-right: 8px;
+	vertical-align: sub;
+}
+.call-today h6 {
+	display: inline-block;
+}
+.nav-area {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.nav-area ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav-area li {
+	text-decoration: none;
+	display: inline-table;
+	padding: 0 0 0 12px;
+}
+.nav-area li.active, .nav-area li:hover a,.nav-area li.active a {
+	color: #0078ff;
+}
+.nav-area li a,.sidebar-nav li a {
+	font-family: 'Varela Round', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: block;
+	font-weight: 400;
+}
+.nav-area li a.active {
+    color:#0078ff;
+}
+
+/**************drop Down******************/
+
+.nav-area li:hover .sub-menu {
+    display: block;
+}
+.nav-area li .sub-menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.nav-area li .sub-menu li:hover a ,.nav-area li .sub-menu li.active {
+	background:#0078ff;
+    transition: all 0.3s ease-in 0s;
+}
+.nav-area li .sub-menu li a {
+    color:#fff;
+    padding-left: 15px;
+	text-transform:capitalize;
+	text-align:left;
+	background:#2b3840;
+    border: 0 none;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 1px;
+    padding: 5px 20px;
+    white-space: nowrap;
+}
+.nav-area li .sub-menu {
+    display: none;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* ==================================================== */
+/* 04.Banner Content Styles                             */
+/* ==================================================== */
+
+.banner-sec-outter {
+	width: 100%;
+}
+.banner-sec {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover!important;
+	-moz-background-size: cover!important;
+	-o-background-size: cover!important;
+	background-size: cover!important;
+	background-attachment:fixed!important;
+}
+.banner-solid {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	background: -moz-linear-gradient(top, rgba(0,120,255,2) 0%, rgba(68,0,242,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,120,255,2) 0%,rgba(68,0,242,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to top, rgba(0,120,255,2) 0%,rgba(68,0,242,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0078ff', endColorstr='#004400f2',GradientType=0 ); /* IE6-9 */
+}
+.banner-mid-text {
+	margin:290px 0 220px;
+	text-align: center;
+	position: relative;
+}
+.banner-mid-text.blog-header {
+    margin: 220px 0 170px;
+}
+.banner-round {
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	display: block;
+	padding-top: 30px;
+	text-align: center;
+	background: #10c2b1;
+	margin: 0 auto;
+}
+.banner-round i {
+	color: #fff;
+	font-size: 82px;
+}
+.banner-mid-text ul li h1 {
+    font-size:60px;
+	font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    margin:0 0 25px;
+    text-transform:capitalize;
+	color:#fff;
+}
+.internal-banner .banner-mid-text ul li h1 {
+	color:#fff;
+}
+.banner-mid-text ul li h4 {
+	font-family: 'Varela Round', sans-serif;
+	font-size:24px;
+	margin: 0 0 30px;
+    text-transform:capitalize;
+	color: #fff;
+	font-weight:400;
+}
+.banner-mid-text ul li i {
+    font-size: 48px;
+	color: #fff;
+}
+
+.flexslider h5 {
+	font-size: 18px;
+	line-height: 24px;
+	color: #10c2b1;
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.para-width {
+	margin: 0 auto;
+	width: 60%;
+}
+/*****************flex-slider*************************/
+
+.flexslider {
+	position: relative;
+}
+.flex-control-paging li a.flex-active {
+	background:rgba(255,255,255,10);
+}
+.flex-control-paging li a {
+	background:rgba(255,255,255,.4);
+	border-radius: 20px;
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	text-indent: -9999px;
+	width: 20px;
+}
+.flex-control-nav li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.flex-direction-nav a {
+	color: hsla(0, 0%, 0%, 0.8);
+	cursor: pointer;
+	display: block;
+	height: 50px;
+	margin: 0;
+	opacity: 1;
+	overflow: hidden;
+	position: absolute;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 hsla(0, 0%, 100%, 0.3);
+	top:20px;
+	transition: all 0.3s ease-in-out 0s;
+	width: 50px;
+	z-index: 10;
+}
+.flex-direction-nav a::before {
+	background: hsla(0, 0%, 0%, 0) url("../img/prev.png") no-repeat;
+	background-size: cover;
+	content: "";
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+}
+.flex-direction-nav a.flex-next::before {
+	background: hsla(0, 0%, 0%, 0) url("../img/next.png") no-repeat;
+	background-size: cover;
+	content: "";
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+}
+.flex-direction-nav .flex-next {
+	right:0;
+	text-align: right;
+}
+.flex-direction-nav .flex-prev {
+    left:0;
+}
+
+#banner-slider .flex-control-paging {
+	bottom:-160px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+/********************************************************/
+
+
+/* ==================================================== */
+/* 05. Schedule Content Styles                          */
+/* ==================================================== */
+
+
+.schedule-area {
+	padding:15px 0 80px 0;
+	background: #0078ff;
+}
+.schedule-left {
+	text-align: center;
+    width: 100%;
+}
+.schedule-left h5 {
+	color:#fff;
+	margin: 0 0 12px;
+	text-transform:uppercase;
+}
+.schedule-left p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	margin-bottom:15px;
+}
+.schedule-left h5.call {
+	font-family: 'Oxygen', sans-serif;
+	color: #fff;
+	display:inline;
+	font-weight: 600;
+    text-transform: capitalize;
+}
+.schedule-left i {
+	font-size: 14px;
+	display:inline;
+	color: #fff;
+	font-size:18px;
+	padding-right:5px;
+}
+.schedule-right {
+	float: right;
+}
+.schedule-call-today h3 {
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	display: inline-block;
+}
+.schedule-call-today i {
+	color: #fff;
+	display: inline-block;
+	font-size: 38px;
+	padding-right: 15px;
+	vertical-align: sub;
+}
+.schedule-call-today {
+	padding-top: 25px;
+}
+/* ==================================================== */
+/* 06. advantages Content Styles                         */
+/* ==================================================== */
+
+
+.advantages-action {
+	padding:135px 0 125px;
+	text-align: center;
+}
+.adventages-content-sec h1 {
+	margin-bottom: 40px;
+}
+.adventages-content-sec p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #666666;
+	padding: 0 8%;
+}
+.adventages-columns-sec {
+	margin:90px 0 0 0;
+	padding: 0;
+}
+.adventages-columns-sec ul {
+	list-style: none;
+}
+.adventages-columns-sec li {
+}
+.adventages-columns-sec li img {
+    margin-bottom: 30px;
+}
+.adventages-columns-sec li h3 {
+	color: #333333;
+	margin-bottom: 20px;
+}
+.adventages-columns-sec li i {
+	margin-bottom: 25px;
+	font-size:60px;
+	color: #0078ff;
+}
+.adventages-columns-sec li p {
+	line-height: 24px;
+}
+/* ==================================================== */
+/* 07. community Content Styles                         */
+/* ==================================================== */
+
+
+.community-area {
+	background: url(../img/about_sec.jpg) no-repeat fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+.community-solid {
+	background-color: rgba(0, 120, 255, 0.80);
+	background:rgba(0, 120, 255, 0.80);
+	color: #fff;
+}
+.community-mid-section {
+	width: 100%;
+	padding:130px 0 140px 0;
+}
+.community-mid-section li {
+	text-align: left;
+}
+.community-mid-section li img {
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	top: -180px;
+}
+.community-mid-section li h4 {
+	color: #fff;
+	font-size: 24px;
+	text-align: left;
+	text-transform: none;
+	margin-bottom: 12px;
+}
+.community-mid-section li h1 {
+	font-family: "Oxygen",sans-serif;
+	color: #fff;
+	text-align: left;
+	text-transform: none;
+	margin-bottom:30px;
+	font-weight: 700;
+}
+.community-mid-section li h6 {
+	color:#fff;
+	margin-bottom: 20px;
+}
+.community-mid-section li p {
+	font-family: "Varela Round",sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+	color: #fff;
+}
+.join-now {
+	background: #fff;
+	color: #0078ff !important;
+	border-radius: 50px;
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size:24px;
+	font-weight: 400;
+	height: 50px;
+	margin:35px 0 0;
+	padding-left: 25px;
+	padding-top:6px;
+	text-align: center;
+	vertical-align: middle;
+	width: 200px;
+}
+.join-now:hover {
+	background: #0078ff;
+	color: #fff !important;
+}
+.join-now i {
+	font-size:42px;
+	margin-left: 10px;
+	margin-top: -2px;
+	vertical-align: middle;
+}
+.awesome-area {
+	padding:130px 0 145px 0;
+}
+.awesome-area p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+	margin-bottom:30px;
+}
+.awesome-area h1 {
+	margin-bottom:35px;
+	text-align: center;
+}
+.awesome-team li {
+	text-align: center;
+}
+.awesome-team li p {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color:#fff;
+	margin:0;
+}
+.awesome-team li h5 {
+	 font-weight: 600;
+	 font-family: "Oxygen",sans-serif;
+	text-align: center;
+	color: #fff;
+	padding: 40px 0 0 0;
+	text-transform: uppercase;
+	margin:0;
+}
+/*.awesome-team li img {
+	border: 15px solid #2b3840;
+}
+*/
+.awesome-team li {
+    position: relative;
+}
+.awesome-team li figure {
+	background:#2b3840;
+	padding:12px 12px 0 12px;
+}
+.awesome-team li figure img {
+	width:100%;
+}
+
+.awesome-team li .overlay-sec-green {
+    opacity: 0;
+	background-color: rgba(2, 105, 222, 0.60);
+	background:rgba(2, 105, 222, 0.60);
+    height:67.3%;
+    left: 27px;
+    padding-top: 35%;
+    position: absolute;
+    top: 11px;
+    width: 82%;
+}
+.awesome-team li:hover .overlay-sec-green {
+    opacity: 1;
+	transition: all 0.5s ease 0s;
+}
+.awesome-team li a {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	height:35px;
+	width:35px;
+	padding-top:5px;
+	font-size:16px;
+	color: #0078ff;
+	display: inline-block;
+}
+.awesome-team li a:last-child {
+	left: 190px;
+}
+.awesome-team li a:hover {
+	background: #fff;
+}
+.team-btm-box {
+	background:url(../img/team-bg-01.png) no-repeat;
+	background-size:cover;
+	padding:5px 0 10px;
+}
+.awesome-team {
+    margin: 70px 0 0;
+}
+.awesome-bottom-text {
+	margin-top: 60px;
+	text-align: center;
+}
+.awesome-bottom-text p {
+	font-size: 14px;
+    line-height: 24px;
+    padding: 0 0;
+	color: #666666;
+}
+.awesome-bottom-text .meet-team, .meet-team {
+	background: #0078ff;
+	border-radius: 50px;
+	color: #fff;
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 24px;
+	font-weight:400;
+	height: 50px;
+	margin: 45px auto 0;
+	padding-left:30px;
+	padding-top:13px;
+	text-align: center;
+	vertical-align: middle;
+	width: 275px;
+}
+.awesome-bottom-text .meet-team i {
+    float: right;
+    font-size: 38px;
+    margin-right: 6px;
+    margin-top: -6px;
+    text-align: right;
+    vertical-align: middle;
+}
+.awesome-bottom-text .meet-team:hover, .meet-team:hover {
+	background: #0169df;
+	color:#fff;
+}
+.meet-team i {
+	font-size: 38px;
+    margin-left: 16px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+.social-icons-team {
+    margin: 0;
+    padding: 0;
+}
+.social-icons-team  ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 0 0;
+}
+.social-icons-team  ul li {
+    display: inline-table;
+    margin: 0;
+    padding:5px 3px 15px 3px ;
+}
+.social-icons-team  ul li a {
+    background:#eeeeee;
+    border-radius: 50%;
+    color:#999999;
+    display: block;
+    font-size:16px;
+    height:35px;
+    margin: 0;
+    padding:6px 0 0;
+    text-align: center;
+    text-decoration: none;
+    width:35px;
+}
+.social-icons-team  ul li a:hover {
+    background:#0078ff;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* ==================================================== */
+/* 08. Count Content Styles                             */
+/* ==================================================== */
+
+
+.Count-area {
+	background: url(../img/our-team-banner.jpg) no-repeat;
+	background-attachment:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.overlay-sec {
+	background-color: rgba(0, 120, 255, 0.80);
+	background:rgba(0, 120, 255, 0.80);
+	color: #fff;
+}
+.overlay-blue {
+	background-color: rgba(43, 56, 64, 0.9);
+	background: rgba(43, 56, 64, 0.9);
+	color: #fff;
+}
+
+.Count-area-middle {
+	margin: 0;
+	padding:145px 0;
+}
+.Count-area-middle ul {
+	list-style: none;
+}
+.Count-area-middle li {
+	text-align: center;
+}
+.Count-area-middle li i {
+	font-size:60px;
+	text-align: center;
+}
+.Count-area-middle li h2 {
+	font-family: "Oxygen",sans-serif;
+	margin: 0px 0 20px 0;
+	font-size: 72px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+}
+.Count-area-middle li h5 {
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight:400;
+	font-family: 'Varela Round', sans-serif;
+	margin: 0;
+}
+.Count-white-rund {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin: 0 auto 40px;
+	text-align: center;
+	padding-top:35px;
+	background-color:#0078ff;
+	background:#0078ff;
+}
+/* ==================================================== */
+/* 09. Our Service Content Styles                       */
+/* ==================================================== */
+
+.our-service-area {
+	padding:132px 0 35px 0;
+	text-align: center;
+}
+.our-service-area h1 {
+	margin-bottom: 40px;
+}
+.our-service-area p {
+	font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    padding: 0 3%;
+}
+.service-middle-list {
+	margin: 50px 0 0 0;
+	padding: 0 0;
+}
+.service-middle-list ul {
+	list-style: none;
+}
+.service-middle-list li {
+	text-align: center;
+	margin-bottom:100px;
+}
+.service-middle-list li p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 0;
+	font-weight:400;
+}
+.service-middle-list li h5 {
+	color: #333333;
+    font-family: "Oxygen",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.service-middle-list li i {
+	font-size: 52px;
+	margin-bottom:25px;
+	color: #0078ff;
+	text-align: center;
+}
+/* ==================================================== */
+/* 10. Looking for job Content Styles                   */
+/* ==================================================== */
+
+.looking-area-sec {
+	padding:50px 0 50px;
+	background: #eeeeee;
+}
+.looking-area-left {
+	float: left;
+	width: 60%;
+}
+.looking-area-left h3 {
+	font-family: "Oxygen",sans-serif;
+	color: #333333;
+	margin-bottom:15px;
+}
+.look-para-tittle {
+	color: #959595;
+	font-weight: 14px;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 25px !important;
+}
+.looking-area-left > p {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 0 0 0;
+	color:#666666;
+}
+.looking-area-right {
+	float: right;
+	padding-top:2%;
+}
+.apply-now {
+	background: #0078ff;
+	color: #fff !important;
+	border-radius: 50px;
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	height: 50px;
+	margin: 0 auto 0;
+	padding-left: 25px;
+	padding-top: 4px;
+	text-align: center;
+	vertical-align: middle;
+	width: 220px;
+}
+.apply-now:hover {
+	background:#0169df;
+	color:#fff !important;
+}
+.apply-now i {
+	font-size:42px;
+	margin-left:15px;
+	vertical-align: middle;
+}
+/* ==================================================== */
+/* 11. Portfolio Content Styles                         */
+/* ==================================================== */
+
+.portfolio-area-sec {
+	padding:130px 0 145px 0;
+	background: #2b3840;
+	text-align: center;
+}
+.port_text_sec h1 {
+	color: #fff;
+	margin-bottom: 32px;
+}
+.port_text_sec p {
+	color: #fff;
+	line-height: 28px;
+	margin-bottom: 32px;
+	font-size:16px;
+	padding: 0 3%;
+	text-align: center;
+}
+.portfolio-gallery li {
+	margin-right: 30px;
+	margin-bottom: 30px;
+	padding: 0;
+	position: relative;
+	width: 30.5%;
+	display:inline-block;
+}
+.portfolio-gallery li .overlay-sec-green {
+	opacity: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transition: all 0.3s ease 0s;
+	background-color: rgba(0, 120, 255, 0.80);
+	background:rgba(0, 120, 255, 0.80);
+}
+.portfolio-gallery li:hover .overlay-sec-green {
+	opacity: 1;
+}
+.portfolio-gallery li img {
+	width: 100%;
+}
+.portfolio-gallery li a {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	height: 55px;
+	left: 120px;
+	position: absolute;
+	top: 40%;
+	width: 55px;
+	padding-top: 15px;
+	font-size: 26px;
+	color: #0078ff;
+}
+.portfolio-gallery li a:last-child {
+	left: 190px;
+}
+.portfolio-gallery li a:hover {
+	background: #fff;
+}
+.load-more {
+    background:#414c53;
+    border-radius: 50px;
+    color:#fff !important;
+    display: block;
+    font-family: "Varela Round",sans-serif;
+    font-size: 16px;
+    height: 40px;
+    margin: 25px auto 0;
+    padding-top: 8px;
+    text-align: center;
+    width: 144px;
+}
+.load-more:hover {
+    color: #fff !important;
+	background:#0169df;
+    transition: all 0.3s ease-in-out 0s;
+}
+.portfolio-margin-sec .portfolioFilter {
+    margin: 0;
+}
+
+/********************************/
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope, .isotope .isotope-item {
+    transition-duration: 0.8s;
+}
+.isotope {
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    transition-property: transform, opacity;
+}
+.portfolioFilter {
+    margin: 60px 0 0;
+    padding: 0;
+}
+.portfolioFilter ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.portfolioFilter li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+.portfolioFilter li a {
+    color:#fff;
+    background: hsl(203, 12%, 29%) none repeat scroll 0 0;
+    border-radius: 50px;
+    display: block;
+    font-family: "Varela Round",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0;
+    padding: 7px 25px;
+    text-transform: capitalize;
+}
+.portfolioFilter li a:hover {
+    color: #fff;
+	background:#0078ff;
+    transition: all 0.3s ease-in-out 0s;
+}
+.portfolioFilter li a.active {
+    color: hsl(69, 72%, 43%);
+}
+.portfolioContainer {
+    margin: 60px 0 0;
+    padding: 0;
+}
+.portfolioContainer img {
+    width: 100%;
+}
+.portfolioFilter .current {
+	background:#0169df;
+}
+
+/***************portfolio-one*******************/
+
+.portfolio-one-sec {
+    background:none;
+	padding-top: 145px;
+}
+.portfolio-one-sec .port_text_sec h1 {
+    color:#000;
+}
+.portfolio-one-sec .portfolioFilter li a:hover {
+	color:#fff;
+}
+.portfolio-one-sec .load-more:hover {
+	color:#fff !important;
+}
+
+
+
+
+
+
+
+/* ==================================================== */
+/* 12. Testinomial Content Styles                       */
+/* ==================================================== */
+
+.testinomial-area-sec {
+	background:#eeeeee;
+	text-align: center;
+}
+.overlay-black {
+	background: rgba(0,0,0,.8);
+}
+.testinol-client {
+    float: left;
+    width: 50%;
+}
+.textinomial-middle-section {
+    padding:0 0 0;
+}
+.textinomial-middle-section h4 {
+	margin-bottom: 40px;
+}
+.textinomial-text img {
+	border: 10px solid #292a2c;
+	border-radius: 50%;
+	height: 125px;
+	width: 125px;
+	margin-bottom: 25px;
+}
+.testinol-client img {
+    width: 100%;
+}
+.textinomial-text {
+	background-image:url(../img/coln.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	float: right;
+    margin: 0 auto;
+    padding-top: 15%;
+    text-align: left;
+    width: 50%;
+}
+.textinomial-text p {
+	color: #666666;
+	font-weight:400;
+	line-height: 24px;
+	margin-bottom:50px;
+	font-size:14px;
+	font-style:italic;
+}
+.textinomial-text h3 {
+    color:#000;
+	font-family: 'Oxygen', sans-serif;
+    margin-bottom: 30px;
+}
+.textinomial-text h5 {
+	font-size: 18px;
+	text-transform: capitalize;
+	color: #333333;
+	font-weight:400;
+	margin-bottom:0;
+}
+.small {
+	color: #333333;
+    font-size: 12px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.textinomial-text h5 span {
+	background: url(../img/border.jpg) no-repeat;
+	width: 17px;
+	height: 4px;
+	background-position: center right;
+	padding-right: 30px;
+}
+.textinomial-text h5 span:first-child {
+	margin-right: 12px;
+}
+.textinomial-middle-section ol.flex-control-nav {
+	z-index: 8;
+    bottom: 20%;
+    position: absolute;
+    right: 46%;
+}
+/****************Slide-edits**********************/
+
+.textinomial-middle-section .flex-direction-nav {
+	display: none;
+}
+.textinomial-middle-section .flexslider li {
+	margin-bottom: 0;
+}
+.textinomial-middle-section .flex-control-nav li {
+	margin: 0 3px;
+}
+.textinomial-middle-section .flex-control-nav li a.flex-active {
+	background:#a6caf3;
+}
+.textinomial-middle-section .flex-control-nav li a {
+	background:#0078ff;
+	width:10px;
+	height:10px;
+}
+
+/* ==================================================== */
+/* 13. Latest Tweets Content Styles                     */
+/* ==================================================== */
+
+.latest-tweets-area {
+	background:url(../img/blog-bg.jpg) no-repeat;
+	background-attachment:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	text-align: center;
+}
+.latest-middle-area {
+	padding:135px 0 140px 0;
+	display: block;
+}
+.latest-middle-area h3 {
+	margin-bottom: 6px;
+	font-family: "Oxygen",sans-serif;
+}
+.latest-middle-area p span {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 14px;
+}
+.latest-middle-area i {
+	font-size: 44px;
+	margin: 10px 0 30px 0;
+	color: #fff;
+}
+.latest-middle-area p {
+	color: #fff;
+	font-weight: 400;
+	margin-bottom:25px;
+	font-size: 18px;
+}
+.latest-middle-area a {
+	border-bottom: 2px solid rgba(255,255,255,.6);
+	color: hsl(0, 0%, 100%);
+}
+.latest-middle-area h4 {
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight:600;
+	line-height: 24px;
+	text-transform: capitalize;
+	font-size: 18px;
+	margin: 0;
+}
+
+/* ==================================================== */
+/* 14. Latest Blog Content Styles                       */
+/* ==================================================== */
+
+.latest-blog-area {
+	padding:145px 0 145px;
+	text-align: center;
+}
+.latest-middle-blog h1 {
+	line-height: 33px;
+	margin-bottom: 45px;
+}
+.latest-middle-blog p {
+	padding: 0 3%;
+	font-size: 16px;
+	line-height:30px;
+	color:#666666;
+}
+/***********blog-listing******************/
+
+.blog-list {
+	margin:80px 0 0 0;
+}
+.blog-list ul {
+	list-style: none;
+}
+.blog-list li {
+	position:relative;
+	 margin-bottom: 50px;
+}
+.blog-list li img {
+	width:100%;
+}
+.blog-list li .overlay-sec-bluesh {
+	opacity: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width:100%;
+	transition: all 0.3s ease 0s;
+	background-color: rgba(0, 120, 255, 0.80);
+	background:rgba(0, 120, 255, 0.80);
+}
+.blog-list li:hover .overlay-sec-bluesh {
+	opacity: 1;
+}
+.blog-list li a {
+	text-align: center;
+	background:#fff;
+	border-radius: 10px;
+	height:70px;
+	left: 150px;
+	position: absolute;
+	top:35%;
+	width: 70px;
+	padding-top: 15px;
+	font-size: 36px;
+	color: #0078ff;
+}
+.date-sec-blog {
+    background:rgba(0,0,0,.7);
+	color:#bababa;
+	font-family: "Varela Round",sans-serif;
+    bottom: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    position: absolute;
+}
+.blog-top {
+    position: relative;
+    margin-bottom: 25px;
+}
+.blog-bottom {
+    text-align: left;
+}
+.blog-bottom h5 {
+	color:#333333;
+	margin-bottom:15px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 600;
+}
+.blog-list li .blog-bottom a {
+    background: hsla(0, 0%, 0%, 0) none repeat scroll 0 0;
+    border-radius: 0;
+    color: hsl(0, 0%, 20%);
+    display: block;
+    font-family: "Oxygen",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    position: static;
+    text-align: left;
+    width: auto;
+}
+.meet-team {
+	background: #0078ff;
+	border-radius: 50px;
+	color: #fff !important;
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	height: 50px;
+	margin:10px auto 0;
+	padding-left: 20px;
+	padding-top: 8px;
+	text-align: center;
+	vertical-align: middle;
+	width: 275px;
+}
+.meet-team:hover {
+	color:#fff;
+}
+
+
+/******************************/
+
+.file-round {
+	width:70px;
+	height:70px;
+	background:#fff;
+	border:5px solid #0078ff;
+	text-align:center;
+	margin:0 auto;
+	padding-top:15px;
+	border-radius:50%;
+}
+.file-round:hover {
+	background:#0078ff;
+	transition: all 0.5s ease 0s;
+	color:#ffffff;
+}
+.file-round i {
+	color:#0078ff;
+	text-align:center;
+	font-size:32px;
+}
+.file-round > span {
+	display: block;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+
+/* ==================================================== */
+/* 15. Contact Blog Content Styles                      */
+/* ==================================================== */
+
+
+.contact-area {
+	padding:130px 0 140px 0;
+	text-align:center;
+}
+.contact-middle-area h1 {
+	margin-bottom:40px;
+}
+.contact-middle-area p {
+    line-height: 28px;
+    padding: 0 3%;
+	font-size:16px;
+}
+.contact-middle-area {
+    margin-bottom: 90px;
+}
+.contact-list {
+	margin:0;
+	padding:0;
+}
+.contact-list ul {
+	list-style:none;
+}
+.contact-list li {
+	text-align:center;
+}
+.contact-list li i {
+	font-size:60px;
+	color:#0078ff;
+	margin-bottom:20px;
+}
+.contact-list li h5 {
+	font-family: "Oxygen",sans-serif;
+	font-size:18px;
+	color:#333333;
+	text-transform:capitalize;
+	font-weight:600;
+	margin-bottom:15px;
+}
+.contact-list li p {
+	font-size:14px;
+}
+.contact-list li a {
+	font-family: "Varela Round",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+	color:#0078ff;
+	display:block;
+}
+.contact-list li span {
+	font-family: "Varela Round",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+	color:#0078ff;
+	display:block;
+}
+
+
+/* ==================================================== */
+/* 16. Quick Contact-Map Content Styles                 */
+/* ==================================================== */
+
+#map {
+	height: 560px;
+    width: 100%;
+	}
+.quick-contact-area {
+	padding:0;
+	position: relative;
+	background-size:cover;
+	text-align:center;
+}
+.quick-contact-text h3 {
+	color:#000;
+	margin-bottom:30px;
+	font-family: "Oxygen",sans-serif;
+}
+.quick-contact-box {
+	padding:40px 50px 50px 50px;
+	margin:0 auto;
+	background:#ffffff;
+	position: absolute;
+    top: 70px;
+    z-index:8;
+	width: 60%;
+}
+.quick-contact-text p {
+    font-size: 14px;
+    margin-bottom: 35px;
+	color:#666666;
+}
+.contact-form-details li {
+    display: inline-block;
+	margin-right:30px;
+	margin-bottom:25px;
+	width:31.1%;
+}
+.contact-form-details li input {
+	color:#666666;
+	font-family: "Varela Round",sans-serif;
+	border:none;
+	background:#eeeeee;
+	height:35px;
+	padding:0 10px;
+	font-size:14px;
+	width: 100%;
+}
+.contact-form-details li:nth-child(5n+3) ,.contact-form-details li:nth-child(5n+4) {
+    margin-right: 0;
+}
+.contact-form-details li textarea {
+	color:#666666;
+	font-family: "Varela Round",sans-serif;
+	border:none;
+	padding-top: 5px;
+	background:#eeeeee;
+	height:80px;
+	padding-left:10px;
+	font-size:14px;
+	width:100%;
+}
+.contact-form-details li:nth-child(4n+4) {
+	width:100%;
+}
+button.submit {
+	background:#0078ff;
+    border-radius: 50px;
+    color: hsl(0, 0%, 100%) !important;
+    display: block;
+	font-family: "Varela Round",sans-serif;
+    font-size: 24px;
+    font-weight:400;
+    height:39px;
+    margin: 0 auto;
+    padding-left:15px;
+    padding-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width:156px;
+	border:none;
+}
+button.submit:hover {
+	background: #0169df;
+	color:#fff;
+}
+
+button.submit i {
+    float: right;
+    font-size: 32px;
+    margin-left: 16px;
+    margin-top: -4px;
+    vertical-align: middle;
+}
+
+/* ==================================================== */
+/* 17. Speak with Us NOWt Styles                        */
+/* ==================================================== */
+
+.speak-area {
+	padding:50px 0 55px;
+	background: #0078ff;
+}
+.speak-left {
+	float: left;
+	width: 60%;
+}
+.speak-left h3 {
+	font-family: "Oxygen",sans-serif;
+	font-weight: 600;
+    margin: 0;
+	text-transform: capitalize;
+}
+.speak-left p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	margin-bottom: 0;
+}
+.speak-right {
+	float: right;
+}
+.speak-call-today h3 {
+	font-weight: 600;
+	font-family: "Oxygen",sans-serif;
+	color: #fff;
+	display: inline-block;
+}
+.speak-call-today i {
+	color: #fff;
+	display: inline-block;
+	font-size: 30px;
+	padding-right:6px;
+	vertical-align:text-bottom;
+}
+
+/* ==================================================== */
+/* 18. Footer Black Styles                              */
+/* ==================================================== */
+
+.footer-warner {
+	padding:55px 0 55px 0;
+	background:#23292d;
+}
+.ftr-warner-middle li p {
+	font-family: "Varela Round",sans-serif;
+    color:#fff;
+    font-size: 13px;
+    line-height:24px;
+	padding-right: 1%;
+	 margin-bottom: 20px;
+}
+.ftr-warner-middle li:nth-child(3n+2) p {
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.ftr-warner-middle li img {
+	margin-bottom:35px;
+	height: 50px;
+}
+.ftr-warner-middle li a {
+	font-family: "Varela Round",sans-serif;
+    color:#0a7e6f;
+    font-size: 13px;
+    line-height:24px;
+	display:block;
+}
+.ftr-warner-middle li input {
+	font-family: "Varela Round",sans-serif;
+    background:#2b3840;
+	height:40px;
+	color:#CCC;
+    border: medium none;
+	margin-bottom: 15px;
+    padding: 0 15px;
+    width: 100%;
+	font-size:13px;
+}
+.ftr-warner-middle li a.submit {
+	font-family: "Varela Round",sans-serif;
+    background:#0078ff;
+    display: block;
+    width:95px;
+	text-align:center;
+	height:35px;
+	color:#fff;
+	text-transform:uppercase;
+	padding-top: 6px;
+	border-radius:50px;
+}
+.ftr-warner-middle li h5 {
+	font-family: "Oxygen",sans-serif;
+    text-transform: capitalize;
+	margin-bottom: 20px;
+    font-weight: 600;
+}
+.ftr-warner-middle li a {
+	font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    text-transform:capitalize;
+	color:#999999;
+}
+.photo-sec-ftr img {
+    margin-bottom: 5px !important;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.photostrm li {
+    display: inline-block;
+    margin-bottom: 5px;
+    min-width: 82px;
+    padding-right: 5px;
+}
+.photostrm img {
+    display: block;
+    margin: 0 !important;
+    width: 100%;
+}
+.photostrm li:last-child {
+    padding-right: 0;
+}
+.photostrm li:nth-child(8n+4) {
+    padding-right: 0;
+}
+
+/* ==================================================== */
+/* 19. Footer ARROW TOP Styles                          */
+/* ==================================================== */
+
+.position-rund-arrow {
+    margin: -30px auto;
+    position: relative;
+    text-align: center;
+}
+.position-rund-arrow a {
+	width:55px;
+	height:55px;
+	background:#0078ff;
+	display:block;
+	border-radius:50%;
+	font-size:36px;
+	color:#fff;
+    margin: 0 auto;
+    text-align: center;
+	padding-top: 8px;
+}
+
+/* ==================================================== */
+/* 20. Footer Main Styles                               */
+/* ==================================================== */
+
+footer {
+    text-align: center;
+}
+.footer-area {
+	padding:55px 0 40px 0;
+	background:#fff;
+}
+.footer-area p {
+	font-family: "Varela Round",sans-serif;
+	font-size:13px;
+	color:#666666;
+}
+.footer-area a {
+	font-family: "Varela Round",sans-serif;
+	font-size:13px;
+	color:#666666;
+}
+.footer-area span {
+    padding: 0 4px;
+}
+.footer-area nav li {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-area nav {
+	margin-bottom:15px;
+}
+.footer-area nav li a {
+	text-transform:uppercase;
+	font-size:14px;
+	color:#333333;
+    text-align: center;
+	font-family: "Varela Round",sans-serif;
+	padding-right:14px;
+}
+.footer-area nav li:last-child a {
+	padding-right:0;
+}
+.social-icons {
+    margin: 0;
+    padding: 0;
+}
+.social-icons  ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 0 0;
+}
+.social-icons  ul li {
+    display: inline-table;
+    margin: 0;
+    padding: 10px 5px;
+}
+.social-icons  ul li a {
+    background:#2b3840;
+    border-radius: 50%;
+    color:#fff;
+    display: block;
+    font-size:18px;
+    height: 35px;
+    margin: 0;
+    padding:6px 0 0;
+    text-align: center;
+    text-decoration: none;
+    width:35px;
+}
+.social-icons  ul li a:hover {
+    background:#0078ff;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/***********tab***********************/
+
+/*************************************/
+
+.tab-outter-sec {
+	background:#eeeeee;
+	position: relative;
+	min-height: 715px;
+}
+.tab-cont h1 {
+    margin-bottom: 40px;
+}
+.tab-mid-content-box {
+    margin: 50px 0 0;
+}
+.tab-mid-content-box li {
+    font-size: 14px;
+	font-family: 'Varela Round', sans-serif;
+	padding-bottom:4px;
+	color:#666666;
+}
+.tab-mid-content-box li {
+    position: relative;
+	padding-left: 22px;
+}
+.tab-mid-content-box li:before {
+    content: "\f14a";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #0078ff;
+    font-size: 14px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tab-mid-content-box p {
+    margin: 0 0 30px;
+	font-family: 'Varela Round', sans-serif;
+	color:#666666;
+}
+.tab-mid-left-box {
+    float: left;
+    padding-right: 6%;
+    text-align: left;
+    width: 50%;
+}
+.tab-mid-right-box {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+
+/*************************************/
+.tab-container {
+    padding:125px 0;
+}
+.tab-container h2 {
+	padding:20px 0 10px 0;
+}
+.tab-container .etabs {
+	list-style: outside none none;
+    margin:-150px auto 130px;
+    padding: 0;
+    text-align: center;
+}
+.tab-container .etabs .tab {
+	padding:0 5px;
+	margin:0 0 0 0;
+	display:inline-table;
+}
+.tab-container .etabs .tab a {
+	background:#dddddd;
+    color:#000000;
+	border-radius:50px;
+    display: inline-block;
+    font-family: "Varela Round",sans-serif;
+    font-size: 18px;
+    height:50px;
+    padding-top: 13px;
+    text-decoration: none !important;
+	padding-left:25px;
+	padding-right:25px;
+}
+.tab-container .etabs .tab a:hover, .tab-container .etabs .tab a.active {
+	color:#ffffff;
+	background:#0078ff;
+	text-decoration:none;
+}
+.tab-container .tab-cont {
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	text-align: center;
+}
+.tab-container .tab-cont.active {
+	visibility:visible!important;
+}
+.our-menu-details.tab-cont.active {
+	visibility:visible!important;
+}
+.panel-container .tab-cont.active {
+    display: block;
+}
+
+
+
+/**************************************/
+.sepert-about-sec .tab-container {
+    padding-bottom: 0;
+}
+.tab-outter-sec.sepert-about-sec {
+	background:#f5f5f5;
+}
+.advantages-action.section-abt-pad {
+    padding: 135px 0 130px;
+}
+.awesome-area.section-ourtem-pad {
+    padding: 130px 0 110px;
+}
+.our-service-area.section-serv-pad {
+    padding: 138px 0 35px;
+}
+.contact-area.section-contat-pad {
+    padding: 138px 0 140px;
+}
+
+/*****************slidebar*********************/
+
+.togg-navi {
+    display: none;
+}
+.first-field.error, .second-field.error, .third-field.error, .forth-field.error {
+    border-bottom: 1px solid hsl(0, 100%, 50%);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape {
+    margin-top: -40px;
+}
+.blog-list li:nth-child(2n+1) .blog-bg-border .round-border-blog {
+    margin-top: -95px;
+}
+
+}
+
+/**************error-style************************/
+
+.quick-contact-box-left div {
+    color:#ff0000;
+    font-family: "Varela Round",sans-serif;
+    font-size: 14px;
+}
+
+
+
+/* ==================================================== */
+/* 21. Media Query                                      */
+/* ==================================================== */
+
+@media (max-width:1600px) {
+
+.quick-contact-box {
+    width: 73%;
+}
+}
+@media (max-width:1400px) {
+
+.quick-contact-box {
+    width: 84%;
+}
+.banner-mid-text {
+    margin: 220px 0 170px;
+}
+}
+
+@media (max-width: 1200px) {
+
+.blog-list li a {
+    left: 140px;
+}
+.banner-mid-text {
+    margin: 200px 0 ;
+}
+.our-service-area img {
+    width: 100%;
+}
+.quick-contact-box {
+    width: 97%;
+	right: 15px;
+}
+.contact-form-details li {
+    width: 30.9%;
+}
+
+.speak-area .row {
+    margin: 0;
+}
+.footer-area .row {
+    margin: 0;
+}
+.latest-blog-area .row {
+    margin: 0;
+}
+.testinomial-area-sec .row {
+    margin: 0;
+}
+.portfolio-area-sec .row {
+    margin: 0;
+}
+.contact-area .row {
+    margin: 0;
+}
+.looking-area-sec .row {
+    margin: 0;
+}
+.our-service-area .row {
+    margin: 0;
+}
+.Count-area .row {
+    margin: 0;
+}
+.awesome-area .row {
+    margin: 0;
+}
+.tab-outter-sec .row {
+    margin: 0;
+}
+.advantages-action .row {
+    margin: 0;
+}
+.schedule-area .row {
+    margin: 0;
+}
+
+
+#banner-slider .flex-control-paging {
+    bottom: -80px;
+}
+.awesome-team li .overlay-sec-green {
+    height: 67.5%;
+    width: 81%;
+}
+
+
+}
+ @media (max-width: 1100px) { 
+
+.blog-list li a {
+    left: 110px;
+}
+.portfolio-gallery li {
+    width: 30%;
+} 
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape .blue-blog-content::before {
+    left: 471px;
+}
+.blue-blog-content {
+    width: 100%;
+}
+.photostrm li {
+    min-width: 24%;
+    padding-right: 0;
+    width: 20%;
+}
+.contact-form-details li {
+    width: 30.5%;
+}
+.textinomial-middle-section ol.flex-control-nav {
+    bottom: 95px;
+    right: 45%;
+}
+.awesome-team li .overlay-sec-green {
+    height: 64%;
+    width: 79%;
+}
+ 
+}
+ @media (max-width: 991px) { 
+ 
+.awesome-team li .overlay-sec-green {
+    height: 89%;
+    width: 94.5%;
+	padding: 45% 0 0;
+}
+.blog-list li a {
+    left: 48%;
+    top: 45%;
+}
+.community-mid-section li img {
+    margin: 0 auto;
+    position: static;
+    text-align: center;
+    width: 100%;
+} 
+.Count-area-middle li {
+    margin-bottom: 30px;
+} 
+.awesome-team li {
+    margin-bottom: 30px;
+} 
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape .blue-blog-content::before {
+    left: 456px;
+} 
+.contact-form-details li {
+    width: 30%;
+}
+.contact-form-details li input {
+    min-width: 100%;
+	width: 100%;
+}
+.contact-form-details li:nth-child(5n+4) {
+    width: 98.3%;
+} 
+.photostrm li {
+    min-width: auto;
+    width: auto;
+}
+.banner-mid-text ul li h1 {
+    font-size: 140px;
+}
+.contact-list li {
+    margin-bottom: 30px;
+}
+.banner-mid-text ul li h1 {
+    font-size: 50px;
+}
+ 
+}
+ @media (max-width: 768px) { 
+ 
+ .blog-list li a {
+    left: 45%;
+}
+.awesome-team li .overlay-sec-green {
+    height: 86%;
+    width: 92.8%;
+} 
+.banner-mid-text ul li h2 {
+    font-size: 48px;
+}
+.portfolio-gallery li {
+    width: 44%;
+} 
+.blue-blog-content h4 {
+    font-size: 18px;
+}
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape .blue-blog-content::before {
+    left: 353px;
+}
+.blue-blog-content {
+    height: auto;
+    padding: 22px 20px 20px 25px;
+}
+.contact-form-details li {
+    width:29.8%;
+}
+.contact-form-details li:nth-child(5n+4) {
+    width: 100%;
+}
+.speak-left {
+    width: 50%;
+}
+.nav-area li {
+    padding: 5px 0 0 15px;
+}
+.looking-area-right {
+    padding-top: 6%;
+}
+.schedule-call-today {
+    padding-top: 22%;
+}
+.textinomial-text {
+    padding-top: 8%;
+}
+.textinomial-middle-section ol.flex-control-nav {
+    bottom: 0;
+    right: 318px;
+}
+
+}
+ @media (max-width: 767px) { 
+ 
+ .tab-container .etabs {
+    margin: -125px auto 100px;
+}
+.schedule-left {
+    float: none;
+    margin-bottom:0;
+    text-align: center;
+    width: 100%;
+} 
+.schedule-right {
+    float: none;
+    text-align: center;
+    width: 100%;
+} 
+.looking-area-left {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.looking-area-right {
+    float: none;
+}
+.portfolio-gallery li:nth-child(6n+2) ,.portfolio-gallery li:nth-child(6n+4) ,.portfolio-gallery li:nth-child(6n+6) {
+}
+.portfolio-gallery li {
+    width:45%;
+}
+.community-mid-section li img {
+    margin-bottom:20px;
+} 
+.schedule-call-today {
+    padding-top: 4%;
+}
+.looking-area-right {
+    padding-top: 4%;
+}
+.contact-form-details li {
+    margin-right: 0;
+    width: 100%;
+}
+.blog-list li .blog-bg-border {
+    float: none;
+    margin: 0 auto;
+    width: 96%;
+	background:none;
+}
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape {
+    float: none;
+    margin-top:0px;
+}
+.blog-list li .blue-blog-shape {
+    float: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
+}
+.round-border-blog { 
+	display:none;
+}
+.blog-list li {
+    margin: 0 0 30px;
+}
+.blue-blog-content::before {
+    background-image: none;
+}
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape .blue-blog-content::before {
+    background-image: none;
+}
+.blog-list {
+    margin: 60px 0 0;
+}
+.speak-left {
+    float: none;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+.speak-right {
+    float: none;
+    text-align: center;
+}
+.service-middle-list li {
+    margin-bottom: 30px;
+}
+.our-service-area {
+    padding:80px 0;
+}
+.header-area.navbar-fixed-top {
+    background:#000;
+}
+.header-area {
+    background:#000;
+}
+
+.banner-round {
+    height: 105px;
+    width: 105px;
+	padding-top: 25px;
+}
+.banner-round i {
+    font-size: 55px;
+}
+
+/*****************toggle-style***********************/
+
+.logo-sec {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0 0px;
+    text-align: center;
+}
+.header-area .row {
+    margin: 0;
+}
+.call-today {
+    padding-top: 30px;
+    text-align: right;
+	margin-bottom: 40px;
+}
+.togg-navi {
+    display: block;
+}
+.togg-text-menu {
+    background: hsla(0, 0%, 0%, 0.4) none repeat scroll 0 0;
+    float: left;
+    font-size: 30px;
+    margin: 0 auto;
+    padding:8px 0 8px 10px ;
+    text-align: left;
+    width: 100%;
+	color:#0078ff;
+}
+.menu-main {
+    display: none;
+}
+.nav-area ul {
+    background: hsla(0, 0%, 0%, 0.4) none repeat scroll 0 0;
+    padding-top:40px;
+	padding-bottom: 30px;
+}
+.nav-area li {
+    display: list-item;
+    padding: 5px 0;
+}
+.header-area {
+    padding:10px 0 15px;
+}
+/***************header-fixsed*******************/
+
+.header-area {
+    position: static;
+}
+.header-area.navbar-fixed-top {
+    padding: 0;
+    position: static;
+    transition: none 0s ease 0s ;
+}
+.header-area.navbar-fixed-top .logo-sec img {
+    height: auto;
+}
+.header-area.navbar-fixed-top .logo-sec {
+    padding: 10px 0 0;
+}
+.header-area.navbar-fixed-top .call-today {
+    display: block;
+}
+.header-area.navbar-fixed-top .header-right-sec {
+    margin: 0;
+}
+.togg-text-menu i {
+    cursor: pointer;
+}
+.ftr-warner-middle {
+    text-align: center;
+}
+.ftr-warner-middle li {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.nav-area li .sub-menu {
+    position: static;
+	display:block;
+}
+.nav-area li .sub-menu li a {
+    background: hsla(0, 0%, 0%, 0) none repeat scroll 0 0;
+    text-align: center;
+}
+.nav-area li a, .sidebar-nav li a {
+	font-size:14px;
+}
+#map {
+    height: 700px;
+}
+.textinomial-text {
+    float: none;
+    padding-top: 10%;
+    width: 100%;
+	text-align:center;
+}
+.testinol-client {
+    float: none;
+    width: 100%;
+}
+.banner-mid-text {
+    margin: 150px 0 100px;
+}
+.tab-mid-left-box {
+    float: none;
+    padding-right: 0;
+    width: 100%;
+	text-align: center;
+}
+.tab-mid-right-box {
+    float: none;
+    width: 100%;
+	text-align: center;
+}
+.tab-mid-content-box li {
+    display: inline-flex;
+}
+.tab-container {
+    padding: 100px 0;
+}
+.ftr-warner-middle li a.submit {
+	margin:0 auto;
+}
+.community-mid-section li h1 {
+    font-size: 42px;
+	text-align: center;
+} 
+.textinomial-middle-section ol.flex-control-nav {
+    display: none;
+} 
+.community-mid-section li {
+    text-align: center;
+}
+.community-mid-section li h4 {
+    text-align: center;
+}
+.join-now {
+    margin: 35px auto 0;
+}
+.blog-bottom {
+    text-align: center;
+}
+.header-right-sec {
+    float: none;
+}
+.togg-navi {
+    float: right;
+}
+.nav-area {
+    padding: 20px 0 0;
+    text-align: center;
+}
+.our-service-area p {
+    padding: 0;
+}
+
+
+
+
+
+}
+ @media (max-width:640px) { 
+
+.awesome-team li .overlay-sec-green {
+    height: 83.3%;
+	 width: 91.4%;
+   
+}
+ }
+
+ @media (max-width: 480px) { /* This media query is written for Mobile only */
+
+.blog-list li a {
+    left: 40%;
+    top: 38%;
+}
+.tab-container .etabs {
+    margin: -125px auto 0;
+}
+.awesome-team li .overlay-sec-green {
+    height: 78.3%;
+    width: 88%;
+	padding: 40% 0 0;
+}
+.banner-mid-text ul li h1 {
+    font-size: 40px;
+}
+.adventages-content-sec h1 {
+    font-size: 34px;
+}
+.call-today {
+    text-align: center;
+}
+.flex-direction-nav a {
+    display: none;
+}
+.banner-mid-text ul li h2 {
+    font-size: 30px;
+}
+.para-width {
+    width: 100%;
+} 
+.flexslider p {
+    font-size: 15px;
+}
+.adventages-content-sec h1 {
+    font-size: 40px;
+} 
+.advantages-action {
+    padding: 70px 0;
+} 
+.community-mid-section li img {
+    margin: 0 auto 20px;
+} 
+.community-mid-section li h4 {
+    font-size: 18px;
+} 
+.community-mid-section li h1 {
+    font-size: 27px;
+} 
+.awesome-area h1 {
+    font-size: 40px;
+} 
+.Count-area-middle li h2 {
+    font-size: 45px;
+}
+.portfolio-gallery li {
+    margin-right: 0;
+    width:100%;
+}
+.portfolio-gallery li a:last-child {
+    left: 250px;
+}
+.portfolio-gallery li a {
+    left: 170px;
+}
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape .blue-blog-content::before {
+    left: 220px;
+}
+.port_text_sec > h1 {
+    font-size: 40px;
+}
+.textinomial-middle-section > h4 {
+    font-size: 28px;
+}
+.latest-middle-blog h1 {
+    font-size: 40px;
+}
+.contact-middle-area > h1 {
+    font-size: 40px;
+}
+.speak-left h3 {
+    font-size: 22px;
+}
+.speak-call-today i {
+    font-size: 28px;
+}
+.speak-call-today h3 {
+    font-size: 22px;
+}
+.speak-left {
+    margin-bottom: 20px;
+}
+.contact-middle-area {
+    margin-bottom: 60px;
+} 
+.latest-blog-area {
+    padding: 65px 0;
+}
+.contact-area {
+    padding: 85px 0 70px;
+}
+.quick-contact-box {
+    right: 15px;
+    width: 94%;
+}
+.call-today i {
+    font-size: 18px;
+    vertical-align: text-bottom;
+}
+.call-today h6 {
+    font-size: 16px;
+}
+.call-today {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.tab-container .etabs .tab {
+    display: list-item;
+    margin: 0 0 10px;
+}
+.panel-container {
+    padding-top: 80px;
+}
+.community-mid-section {
+    padding: 80px 0;
+    width: 100%;
+}
+.portfolio-area-sec {
+    padding: 80px 0;
+}
+.quick-contact-box {
+    padding: 50px 20px 30px;
+}
+
+
+
+
+}
+ @media (max-width: 414px) { /* This media query is written for Mobile only */
+ 
+ .awesome-team li .overlay-sec-green {
+    height: 75%;
+    width: 86%;
+}
+.portfolio-gallery li a:last-child {
+    left: 220px;
+}
+.portfolio-gallery li a {
+    left: 140px;
+}
+.blog-list li a {
+    top: 35%;
+}
+.blog-list li:nth-child(2n+1) .blog-bg-border .blue-blog-shape .blue-blog-content::before {
+    left: 190px;
+} 
+.portfolioFilter li a {
+    padding: 10px 15px;
+}
+.portfolio-gallery li a:last-child {
+    left: 200px;
+} 
+.portfolio-gallery li a {
+    left: 120px;
+}
+ 
+}
+ @media (max-width: 380px) { /* This media query is written for Mobile only */
+ 
+.portfolioFilter li a {
+    font-size: 12px;
+    padding: 10px 12px;
+}
+.portfolio-gallery li a:last-child {
+    left: 170px;
+}
+.portfolio-gallery li a {
+    left: 100px;
+}
+.call-today i {
+    font-size: 18px;
+}
+.call-today h6 {
+    font-size: 22px;
+}
+ h1 {
+    font-size: 32px !important;
+}
+.awesome-bottom-text .meet-team, .meet-team {
+    font-size: 22px;
+    width: 100%;
+}
+.meet-team i {
+    margin-left: 20px;
+}
+.quick-contact-box {
+    width: 91%;
+}
+.awesome-team li .overlay-sec-green {
+    height: 73%;
+    width: 84.8%;
+	padding: 36% 0 0;
+}
+ 
+}
+ @media (max-width: 320px) { /* This media query is written for Mobile only */
+
+.blog-list li a {
+    left: 38%;
+    top: 30%;
+} 
+.call-today h6 {
+    font-size: 20px;
+} 
+.call-today h6 {
+    font-size:16px;
+}
+.schedule-call-today i {
+    font-size: 34px;
+}
+.schedule-call-today h3 {
+    font-size: 26px;
+}
+.awesome-area h1 {
+    font-size: 32px;
+}
+.our-service-area h3 {
+    font-size: 38px;
+}
+.port_text_sec > h1 {
+    font-size: 36px;
+}
+.latest-middle-blog h1 {
+    font-size: 38px;
+}
+.awesome-team li .overlay-sec-green {
+    height: 68%;
+    width: 81.8%;
+}
+ 
+}
